@@ -81,7 +81,7 @@ public class Main extends JFrame {
         driver.get("https://www.nytimes.com/games/wordle/index.html");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10000));
         driver.findElement(By.xpath("//button[contains(.,'Play')]")).click();
-        driver.findElement(By.cssSelector("[aria-label='Close']")).click();
+        driver.findElement(By.cssSelector("button[aria-label='Close']")).click();
     }
 
 
